@@ -1,0 +1,27 @@
+import winsound
+import random
+
+#infinite loop! (don't use)
+#while(1):
+    #winsound.Beep(200, 300)
+    
+#    winsound.Beep(random.randrange(200, 1000), random.randrange(200, 1000))
+    
+print()#skips a line between loops
+
+#a loop that prints out the numbers 6-36 3s
+num = 6
+while num <= 37:
+    print(num, end = " ")
+    num+=3
+
+print()#skips a line between loops
+
+#a loop that prints out beep untill a user types "q"
+choice = "Beep"
+while choice != "quit":
+    print(choice)
+    winsound.Beep(random.randrange(200, 1000), random.randrange(200, 1000))
+    choice = input("type in q. type to quit: ")
+    
+print("no more Beeps. goodbye.") #not in loop!
